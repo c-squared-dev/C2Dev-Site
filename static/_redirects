@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain (for SEO)
+http://fervent-bhaskara-c31ea8.netlify.com/* https://c2dev.co.uk/:splat 301!
