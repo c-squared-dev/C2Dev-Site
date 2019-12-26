@@ -1,0 +1,14 @@
+[
+  {
+    "id": 0,
+    "name": "Github",
+    "link": "https://github.com/chrismclarke",
+    "icon": "/icons/github.svg"
+  },
+  {
+    "id": 1,
+    "name": "StackOverflow",
+    "link": "https://stackoverflow.com/users/story/5693245",
+    "icon": "/icons/stackoverflow.svg"
+  }
+]
