@@ -62,8 +62,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        name: config.defaultTitle,
-        short_name: "starter",
+        name: 'C-Squared Development',
+        short_name: "C2Dev",
         start_url: "/",
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
