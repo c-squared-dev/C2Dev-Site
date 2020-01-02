@@ -7,20 +7,13 @@ export const Footer = () => (
   <Wrapper>
     <Flex as={Container}>
       <Details>
-        {/* <h2>C-Squared Development</h2> */}
         <span>
           © All rights are reserved | {new Date().getFullYear()} | Made with{" "}
           <span aria-label="love" role="img">
             💖
           </span>{" "}
           by{" "}
-          {/* <a
-						href="https://smakosh.com/?ref=portfolio-dev"
-						rel="noopener noreferrer"
-						target="_blank"
-					> */}
           C2Dev Ltd.
-          {/* </a> */}
         </span>
       </Details>
       <Links>

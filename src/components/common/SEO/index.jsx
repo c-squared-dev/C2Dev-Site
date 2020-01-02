@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Thumbnail from 'assets/thumbnail/thumbnail.png'
+import Thumbnail from 'assets/thumbnail/thumbnail.jpg'
 import {
   url,
   defaultDescription,
@@ -58,7 +58,7 @@ export const SEO = ({
       <meta name="description" content={description} />
       <meta name="image" content={Thumbnail} />
 
-      <meta property="og:url" content={`${url}${location}/?ref=smakosh.com`} />
+      <meta property="og:url" content={`${url}${location}/?ref=c2dev.co.uk`} />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
