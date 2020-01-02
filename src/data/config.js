@@ -5,27 +5,27 @@ module.exports = {
   author: "Chris Clarke",
   url: "https://c2dev.co.uk",
   legalName: "C-Squared Development Limited",
-  defaultDescription: `I’m Chris, and this is my company, C-Squared Development!`,
+  defaultDescription: `I’m Chris, and I'm a full stack developer`,
   socialLinks: {
-    // twitter: "http://www.twitter.com/smakosh",
-    github: "https://github.com/smakosh",
+    // twitter: "",
+    github: "https://github.com/chrismclarke",
     linkedin: "https://www.linkedin.com/in/ismail-ghallou-630149122/"
-    // instagram: "https://instagram.com/smakosh19",
-    // youtube: "https://www.youtube.com/user/smakoshthegamer",
-    // google: "https://plus.google.com/u/0/+IsmailSmakoshGhallou"
+    // instagram: "",
+    // youtube: "",
+    // google: ""
   },
   googleAnalyticsID: "UA-153069588-2",
   themeColor: "#6b63ff",
   backgroundColor: "#6b63ff",
   social: {
     // facebook: "appId",
-    // twitter: "@smakosh"
+    // twitter: "@"
   },
   address: {
     city: "London",
-    // region: "Twickenham",
+    // region: "",
     country: "UK"
-    // zipCode: "ZipCode"
+    // zipCode: ""
   },
   contact: {
     email: "admin@c2dev.co.uk"
