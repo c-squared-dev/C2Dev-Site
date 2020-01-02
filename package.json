@@ -2,7 +2,7 @@
   "name": "c2dev-site",
   "private": true,
   "description": "Website for C-Squared Development",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Chris Clarke <admin@c2dev.co.uk>",
   "scripts": {
     "build": "gatsby build",
