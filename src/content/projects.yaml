@@ -8,6 +8,11 @@
   cover: "onearmy.jpg"
   short_description: Open-source project to support online collaboration on social issues. Currently used by the Precious Plastic Community
   external: "https://community.preciousplastic.com/"
+- path: "/projects/unhcr"
+  title: Sampling Decision Assistant
+  cover: "unhcr.jpg"
+  short_description: Progressive web app to help determine sampling sizes in research. Created with Stats4SD for use by UNHCR
+  external: "https://unhcr-sampling-assistant.netlify.com/"
 - path: "/projects/aimssec"
   title: AIMSSEC Teacher Network
   cover: "aimssec.jpg"
