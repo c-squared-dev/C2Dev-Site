@@ -1,0 +1,25 @@
+- path: "/projects/picsa"
+  title: PICSA Malawi
+  cover: "picsa.jpg"
+  short_description: Mobile app to support farmer decision making. Created in partnership with the University of Reading and World Food Programme
+  external: "https://play.google.com/store/apps/details?id=io.picsa.malawi"
+- path: "/projects/onearmy"
+  title: OneArmy Platform
+  cover: "onearmy.jpg"
+  short_description: Open-source project to support online collaboration on social issues. Currently used by the Precious Plastic Community
+  external: "https://community.preciousplastic.com/"
+- path: "/projects/aimssec"
+  title: AIMSSEC Teacher Network
+  cover: "aimssec.jpg"
+  short_description: Web and mobile apps to support problem-solving within mathematics education in South Africa
+  external: "https://play.google.com/store/apps/details?id=io.chrismclarke.aiminghigh_za&hl=en_GB"
+- path: "/projects/sami"
+  title: SAMI Charity
+  cover: "sami.jpg"
+  short_description: A charity I co-founded in 2015 and have been working closely with ever since. Includes website, app and lots of work on the ground in Kenya
+  external: "https://samicharity.co.uk/"
+- path: "/projects/my-past-papers"
+  title: My Past Papers
+  cover: "my-past-papers.jpg"
+  short_description: App for Android and IOS to provide access to GCSE past papers
+  external: "https://mpp.c2dev.co.uk/"

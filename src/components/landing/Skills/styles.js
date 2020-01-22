@@ -42,16 +42,32 @@ export const Details = styled.div`
     color: #707070;
   }
 `;
-
-export const Thumbnail = styled.div`
-  flex: 1;
+export const Grid = styled.div`
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 8fr;
+  gap: 3rem 3rem;
 
   @media (max-width: 960px) {
-    width: 100%;
-    margin-bottom: 2rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  img {
-    width: 100%;
+  @media (max-width: 680px) {
+    grid-template-columns: 1fr;
+  }
+`;
+export const Item = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  h4 {
+    color: #212121;
+  }
+  p {
+    color: #707070;
   }
 `;

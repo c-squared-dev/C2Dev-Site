@@ -25,37 +25,25 @@ export const Item = styled.div`
   height: 100%;
   overflow: hidden;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.11);
-
   h4 {
     color: #212121;
   }
-
   p {
     color: #707070;
+  }
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 8px 26px 0px;
+    transition: all 0.3s ease 0s;
   }
 `;
 
 export const Content = styled.div`
-  padding: 1rem 0;
+  padding:1rem;
 `;
+export const CoverImg = styled.img`
+  height: 200px;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom:0;
+`
 
-export const Stats = styled.div`
-  display: flex;
-  align-items: center;
-
-  div {
-    display: flex;
-    &:first-child {
-      margin-right: 0.5rem;
-    }
-
-    img {
-      margin: 0;
-    }
-
-    span {
-      color: #000;
-      margin-left: 0.5rem;
-    }
-  }
-`;

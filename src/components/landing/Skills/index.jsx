@@ -1,31 +1,37 @@
 import React from "react";
-import AnchorLink from "react-anchor-link-smooth-scroll";
-import { Container, Button } from "components/common";
-import GlobalDev from "assets/illustrations/globalDev.svg";
-import { Wrapper, SkillsWrapper, Details, Thumbnail } from "./styles";
+import { Container } from "components/common";
+import { Wrapper, SkillsWrapper, Details, SkillsIcon, Grid, Item } from "./styles";
+
+const skills = [{
+  label: 'Full Stack Development',
+  image: require('assets/illustrations/full-stack.svg')
+},
+{
+  label: 'Research Methods Support',
+  image: require('assets/illustrations/rms.svg')
+},
+{
+  label: 'Teaching and Training',
+  image: require('assets/illustrations/teaching.svg')
+}]
 
 export const Skills = () => (
-  <Wrapper id="about">
+  <Wrapper id="skills">
     <SkillsWrapper as={Container}>
-      <Thumbnail>
-        <img
-          src={GlobalDev}
-          alt="I’m John and I’m a Backend & Devops engineer!"
-        />
-      </Thumbnail>
       <Details>
-        <h1>Global Development</h1>
-        <p>
-          I work with projects that seek to make the world better for those who
-          need it most.
-        </p>
-        <p>
-          I'm strongly interested in education, the environment, food security
-          and global health issues
-        </p>
-        {/* <Button as={AnchorLink} href="#contact">
-          Hire me
-        </Button> */}
+        <h1>Skills</h1>
+        <Grid>
+          {
+            skills.map(s => (
+              <Item>
+                <img src={s.image} />
+                <h4 style={{ textAlign: 'center' }}>{s.label}</h4>
+              </Item>
+            ))
+
+          }
+        </Grid>
+
       </Details>
     </SkillsWrapper>
   </Wrapper>

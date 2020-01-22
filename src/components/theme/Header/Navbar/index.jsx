@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import { Container } from "components/common";
-import Logo from "assets/c2dev/horizontal.svg";
+import Logo from "assets/c2dev/horizontal.png";
 import NavbarLinks from "../NavbarLinks";
 import { Wrapper } from "./styles";
 

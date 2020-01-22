@@ -1,75 +1,38 @@
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import { Container, Card } from "components/common";
-import starIcon from "assets/icons/star.svg";
-import forkIcon from "assets/icons/fork.svg";
-import { Wrapper, Grid, Item, Content, Stats } from "./styles";
+import { Container, Card, CardTitle, CardContent } from "components/common";
+import { Wrapper, Grid, Item, Content, CoverImg } from "./styles";
+import allProjects from 'content/projects.yaml'
 
-export const Projects = () => {
-  const {
-    github: {
-      viewer: {
-        repositories: { edges }
-      }
-    }
-  } = useStaticQuery(
-    graphql`
-      {
-        github {
-          viewer {
-            repositories(
-              first: 8
-              orderBy: { field: STARGAZERS, direction: DESC }
-            ) {
-              edges {
-                node {
-                  id
-                  name
-                  url
-                  description
-                  stargazers {
-                    totalCount
-                  }
-                  forkCount
-                }
-              }
-            }
-          }
-        }
-      }
-    `
-  );
-  return (
+function importAll(r) {
+  let images = {};
+  r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+  return images;
+}
+
+const covers = importAll(require.context('assets/covers', false, /\.(png|jpe?g|svg)$/));
+
+
+export const Projects = () =>
+  (
     <Wrapper as={Container} id="projects">
-      <h2>Open Source Projects</h2>
+      <h1>Featured Projects</h1>
       <Grid>
-        {edges.map(({ node }) => (
+        {allProjects.map(p => (
           <Item
-            key={node.id}
+            key={p.path}
             as="a"
-            href={node.url}
+            href={p.external}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="nofollow"
           >
             <Card>
-              <Content>
-                <h4>{node.name}</h4>
-                <p>{node.description}</p>
-              </Content>
-              <Stats>
-                <div>
-                  <img src={starIcon} alt="stars" />
-                  <span>{node.stargazers.totalCount}</span>
-                </div>
-                <div>
-                  <img src={forkIcon} alt="forks" />
-                  <span>{node.forkCount}</span>
-                </div>
-              </Stats>
+              <CardTitle>{p.title}</CardTitle>
+              <CoverImg src={covers[p.cover]} />
+              <CardContent>{p.short_description}</CardContent>
             </Card>
           </Item>
         ))}
       </Grid>
     </Wrapper>
   );
-};
+
