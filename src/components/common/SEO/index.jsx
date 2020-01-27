@@ -51,21 +51,20 @@ export const SEO = ({
   return (
     <Helmet>
       <meta name="description" content={description} />
-      <meta name="image" content={Thumbnail} />
+      <meta name="image" content={`${url}${Thumbnail}`} />
 
       <meta property="og:url" content={`${url}${location}/?ref=c2dev.co.uk`} />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={Thumbnail} />
-      <meta property="fb:app_id" content={social.facebook} />
+      <meta property="og:image" content={`${url}${Thumbnail}`} />
 
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:creator" content={socialLinks.twitter} />
       <meta name="twitter:site" content={social.twitter} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image:src" content={Thumbnail} />
+      <meta name="twitter:image:src" content={`${url}${Thumbnail}`} />
       <script type="application/ld+json">{structuredDataOrganization}</script>
       <link rel="publisher" href={socialLinks.google} />
       <title>{title}</title>
