@@ -38,7 +38,7 @@ export const Details = styled.div`
     }
   }
 
-  h4 {
+  h2 {
     margin-bottom: 2.5rem;
     font-size: 32pt;
     font-weight: normal;
