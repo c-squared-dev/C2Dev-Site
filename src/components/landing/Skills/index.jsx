@@ -23,7 +23,7 @@ export const Skills = () => (
         <Grid>
           {
             skills.map(s => (
-              <Item>
+              <Item key={s.label}>
                 <img src={s.image} />
                 <h4 style={{ textAlign: 'center' }}>{s.label}</h4>
               </Item>

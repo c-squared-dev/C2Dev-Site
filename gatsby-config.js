@@ -1,4 +1,5 @@
 const config = require("./src/data/config");
+const path = require("path");
 
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`
@@ -13,6 +14,13 @@ module.exports = {
   plugins: [
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-styled-components",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: path.join(__dirname,`src`)
+      },
+    },
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
     {
