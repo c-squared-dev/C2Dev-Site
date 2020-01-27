@@ -1,4 +1,6 @@
 const path = require('path');
+const fs = require("fs")
+const yaml = require("js-yaml")
 
 exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
@@ -7,3 +9,20 @@ exports.onCreateWebpackConfig = ({ actions }) => {
     },
   });
 };
+
+// Not currently in use (but planned for future), individual project pages
+
+// exports.createPages = ({ actions }) => {
+//   const { createPage } = actions
+//   const ymlDoc = yaml.safeLoad(fs.readFileSync("./src/content/projects.yaml", "utf-8"))
+//   ymlDoc.forEach(element => {
+//     createPage({
+//       path: element.path,
+//       component: require.resolve("./src/templates/project.template.js"),
+//       context: {
+//         pageContent: element.content,
+//         links: element.links,
+//       },
+//     })
+//   })
+// }
