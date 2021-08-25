@@ -4,6 +4,9 @@ export const Card = styled.div`
   background: #fff;
   height: 100%;
   color:black;
+  display:flex;
+  flex-direction:column;
+  cursor:default;
 `;
 export const CardTitle = styled.h4`
   background: #fff;
@@ -13,4 +16,5 @@ export const CardTitle = styled.h4`
 `;
 export const CardContent = styled.div`
   padding:1rem;
+  flex:1;
 `;
